@@ -78,28 +78,7 @@
 				is able to make prediction.
 </p>
 
-				<!---strat-top-grids---->
-				<div class="top-grids">
-					<div class="top-grid">
-						<a class="icon monitor" href="https://en.wikipedia.org/wiki/Long_short-term_memory"> </a>
-						<a href="#">LSTM</a>
-						<p>A common LSTM unit is composed of a cell, an input gate, an output gate and a forget gate. The cell remembers values over arbitrary time intervals and the three gates regulate the flow of information into and out of the cell.
-</p>
-					</div>
-					<div class="top-grid">
-						<a class="icon monitor" href="https://github.com/jamesqo/gun-violence-data"> </a>
-						<a href="#">DataSet</span></a>
-						<p>We find that each state and each month have some internal tendency by visualization results. Therefore, we collect the killed number sequence by the order of year and then split the data to per state and per month, thus we got 50 states with each has 12 months data, 600 sequences. Each data contains the killed number from 2013-2018 years. We further split the whole dataset into training and testing set to evaluate our method.
-</p>
-					</div>
-					<div class="top-grid">
-						<a class="icon monitor" > </a>
-						<a href="#">Experiment Setting</span></a>
-						<p>We use Stochastic Gradient Descent (SGD) as the optimization method, with momenta = 0.9 and weight decay = 5e-03. We use 0.1 learning rate and decay it by 1/10 on 100 and 200 training epochs. Since the dataset is small, we conduct data augmentation by randomly plus or minus 0~3 for each killed number sequence.</p>
-					</div>
-					<div class="clear"> </div>
-				</div>
-				<!---End-top-grids---->
+				
 			</div>
 			<div class="grids-of_4">
 				<div class="wrap">
@@ -176,6 +155,84 @@
 	<!-----end-about--------->
 	<!-----start-services----->
 	<div class="services" id="services">
+		<h3 class="heading"> DataBase </h3>
+		<p class="desc">Gun Violence Data </p>
+		<p class="desc"><a href="https://github.com/jamesqo/gun-violence-data">Github</a></p>
+		<h6> </h6>
+		<div class="wrap">
+		<div class="service_grids">
+			<div class="grid1">
+				
+				<div class="grid_sub">
+					<h3><span>About DataBase</span></h3>
+					<p>There's currently a lack of large and easily-accessible
+					amounts of detailed data on gun violence. This database aims 
+					to change that; it makes a record of more than 260k gun violence 
+					incidents, with detailed information about each incident, available 
+					in CSV format. We hope that this will make it easier for data 
+					scientists and statisticians to study gun violence and predict future trends. 
+					</p>
+				</div>
+					<div class="clear"> </div>
+			</div>
+			<div class="grid1">
+				<div class="grid_sub">
+					<h3><span>Observation </span></h3>
+					<p>During the initial data cleaning process, we notice the amount of data 
+					recorded in 2013 is quite low. Such low volumn may lead to possible training
+					or evaluation error later for our model. Thus, we decided to discar all data 
+					in 2013. In addition, despite 29 columns of different data, the most important
+					columns are "State", "
+					
+					</p>
+				</div>
+					<div class="clear"> </div>
+			</div>
+			<div class="grid1">
+				<div class="grid_sub">
+					<h3><span>Data Process</span></h3>
+					<p>We find that each state and each month have some internal 
+					tendency by visualization results. Therefore, we collect the 
+					killed number sequence by the order of year and then split the 
+					data to per state and per month, thus we got 50 states with each 
+					has 12 months data, 600 sequences. Each data contains the killed 
+					number from 2013-2018 years. We further split the whole dataset 
+					into training and testing set to evaluate our method.</p>
+				</div>
+					<div class="clear"> </div>
+			</div>
+			<div class="grid1">
+				
+				
+					<div class="clear"> </div>
+			</div>
+			<div class="grid1">
+				
+				
+			<div class="clear"> </div>
+			</div>
+			<div class="grid1">
+				
+				
+					<div class="clear"> </div>
+			</div>
+			<div class="clear"> </div>
+		</div>
+		</div>
+	<div class="slider2">
+		<div class=" bg_mask1 bg_mask2">
+			<div class="wrap">
+				
+				
+				<h6> </h6>
+				<h4></h4>
+			</div>
+		</div>
+	</div>
+	</div>
+	<!----end-services--------->
+	<!-----start-services----->
+	<div class="services" id="services">
 		<h3 class="heading"> Methodologies </h3>
 		<p class="desc">Long Short-Term Memory </p>
 		<h6> </h6>
@@ -186,7 +243,13 @@
 				<div class="grid_sub">
 					<h3><span>LSTM Model Structure</span></h3>
 					<img src="images/lstm.png">
-					
+					<p>LSTM: Long short-term memory (LSTM) is an artificial 
+					recurrent neural network (RNN) architecture used in the 
+					field of deep learning. Unlike standard feedforward neural 
+					networks, LSTM has feedback connections. It can not only process 
+					single data points (such as images), but also entire sequences of 
+					data (such as speech or video).
+					</p>
 				</div>
 					<div class="clear"> </div>
 			</div>
@@ -194,6 +257,12 @@
 				<div class="grid_sub">
 					<h3><span>Training </span></h3>
 					<img src="images/train.png">
+					<p>As shown on the loss curve figure, the model successfully 
+					learns the variation tendency on training set. And there is an 
+					obvious downtrend when applied it on testing set. This demonstrates 
+					the effectiveness of our long short-term memory model. Thus, by further 
+					applying data in 2018, we can use the model to predict the killed number 
+					on each state on 2019.</p>
 				</div>
 					<div class="clear"> </div>
 			</div>
@@ -201,6 +270,13 @@
 				<div class="grid_sub">
 					<h3><span>Testing</span></h3>
 					<img src="images/test.png">
+					<p><p>We use Stochastic Gradient Descent (SGD) as
+					the optimization method, with momenta = 0.9 and weight 
+					decay = 5e-03. We use 0.1 learning rate and decay it by 
+					1/10 on 100 and 200 training epochs. Since the dataset is 
+					small, we conduct data augmentation by randomly plus or minus
+					0~3 for each killed number sequence.</p>
+					</p>
 				</div>
 					<div class="clear"> </div>
 			</div>
